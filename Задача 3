@@ -1,0 +1,24 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        String s = "dfgfd";
+        System.out.println(pal(s));
+    }
+
+    public static String pal(String s) {
+        String[] d = s.split("");
+        int f = 1;
+        for (int i = 0; i < d.length / 2; i++) {
+            if (!d[i].equals(d[d.length - i - 1])) {
+                f = 0;
+                break;
+            }
+        }
+        if (f == 1) {
+            return "YES";
+        } else {
+            return "NO";
+        }
+    }
+}
