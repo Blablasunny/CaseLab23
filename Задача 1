@@ -1,1 +1,1 @@
-SELECT surname FROM my_table WHERE experience IN (SELECT MIN(experience) FROM my_table WHERE experience NOT IN (SELECT MIN(experience) FROM my_table))
+SELECT surname FROM my_table WHERE experience IN (SELECT MIN(experience) FROM my_table WHERE experience NOT IN (SELECT MIN(experience) FROM my_table));
