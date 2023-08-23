@@ -1,0 +1,22 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        int a, b;
+        a = 5;
+        b = 3;
+        int[] nums = repl(a, b);
+        a = nums[0];
+        b = nums[1];
+        System.out.println(a + " " + b);
+    }
+
+    public static int[] repl(int a, int b) {
+
+        a = a + b;
+        b = a - b;
+        a = a - b;
+        int[] nums = {a, b};
+        return nums;
+    }
+}
